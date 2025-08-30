@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
+    
     <motion.div
       initial={{ opacity: 0, x: 200 }}
       transition={{ duration: 1.5 }}

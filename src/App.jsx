@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <ToastContainer />
       <Header />
       <About />
