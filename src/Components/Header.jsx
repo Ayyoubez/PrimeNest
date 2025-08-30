@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
@@ -9,7 +11,13 @@ const Header = () => {
       id="#Header"
     >
       <Navbar />
-      <div className="container w-full text-center text-white mx-auto py-4 px-6 md:px-20 lg:px-32">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="container w-full text-center text-white mx-auto py-4 px-6 md:px-20 lg:px-32"
+      >
         <h2 className="text-5xl sm:text-6xl md:text-[82px] font-semibold max-w-3xl inline-block pt-20 ">
           Explore homes that fit your dreams
         </h2>
@@ -21,7 +29,7 @@ const Header = () => {
             Contact Us
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

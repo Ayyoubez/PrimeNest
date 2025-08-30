@@ -1,5 +1,6 @@
 import About from "./Components/About";
 import ContactUs from "./Components/ContactUs";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
@@ -16,6 +17,7 @@ const App = () => {
       <Projects />
       <Testimonials />
       <ContactUs />
+      <Footer />
     </div>
   );
 };
