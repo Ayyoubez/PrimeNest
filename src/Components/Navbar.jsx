@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="absolute left-0 top-0 w-full z-10 ">
       <div className=" container flex justify-between items-center mx-auto py-4 px-6  md:px-20 lg:px-24 bg-transparent">
-        <img src={assets.logo} alt="" className="" />
+        <img src={assets.logo} alt="" className="w-50" />
 
         <ul className="hidden md:flex gap-7 text-white ">
           <a className="cursor-pointer hover:text-gray-400" href="#Header">
